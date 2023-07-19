@@ -1,0 +1,72 @@
+ESPECIFICACION DEL CASO DE USO DE SISTEMA: Crear Convocatoria
+
+Flujo Basico:
+	1.El caso de uso inicia cuando el Jefe de la Unidad de RRHH selecciona la
+	 opcion "Convocatorias" en la interfaz del menu principal
+	2.El sistema muestra la interfaz "Mantener Convocatoria" con la lista de 
+	 convocatorias con los campos: ID , Nombre , Area, Pruebas de Conocimientio, Fecha de Inicio, Fecha de Fin . Ademas, muestra las opciones:
+	 Agregar Convocatoria, Actualizar Convocatoria.
+	3.Si el Jefe de la Unidad de RRHH elije una convocatoria
+	   a. Si elige "Actualizar" ver el Subflujo Actualizar Convocatoria.
+	   b. Si elige "Desactivar" ver el Subflujo Desactivar Convocatoria.
+	4.Si el Jefe de la Unidad de RRHH no elige una convocatoria
+	   a. Si elige "Agregar" ver el Subflujo Agregar Convocatoria.
+		a.1 Si elige "Crear Prueba" ver el SubFlujo Agregar Prueba de Conocimientos
+	5.El Jefe de la Unidad de RRHH selecciona "Salir" y el caso de uso finaliza.
+
+SubFlujos:
+	1. Agregar Convocatoria
+		1.1. El sistema muestra la interfaz "CONVOCATORIA" con los siguientes
+		     campos:ID (Solo lectura), Nombre , Area, Pruebas de Conocimientio (Boton Crear Prueba + combobox), Fecha de Inicio, Fecha de Fin. Ademas, muestra las opciones: Aceptar y Cancelar.
+		1.2. El Jefe de la Unidad de RRHH ingresa los datos de la convocatoria.
+		1.3. El Jefe de la Unidad de RRHH selecciona la opcion Aceptar.
+		1.4. El sistema  valida los datos ingresados.
+		1.5. El sistema genera un nuevo codigo de convocatoria y muestra el
+		     el mensaje "Convocatoria creada con codigo Nro. COxxxxx".
+		1.6. El Jefe de la Unidad de RRHH cierra la interfaz CONVOCATORIA y 
+		     regresa a la interfaz MANTENER CONVOCATORIA con la lista de 
+		     convocatorias actualizada y el subflujo finaliza.
+	
+	2. Actualizar Convocatoria
+		2.1. El sistema muestra los datos de la convocatoria seleccionada en la
+		     interfaz CONVOCATORIA:    ....    . Ademas muestra las opciones:
+		     Aceptar y Cancelar.
+		2.2. El Jefe de la Unidad de RRHH actualiza los datos del cajero.
+		2.3. El Jefe de la Unidad de RRHH selecciona la opcion aceptar.
+		2.4. El sistema valida los datos ingresados del cajero.
+		2.5. El sistema muestra el mensaje "CConvocatoria actualizada 
+		      satisfactoriamente".
+		2.6. El Jefe de la Unidad de RRHH cierra la interfaz CONVOCATORIA y 
+		      regresa a la interfaz MANTENER CONVOCATORIA con la lista de 
+		      convocatorias actualizada y el subflujo finaliza.
+	
+
+	4. Agregar Prueba de Conocimiento
+		1.1. El sistema muestra la interfaz "PRUEBA DE CONOCIMIENTOS" con los siguientes
+		     campos:   ...   . Ademas, muestra las opciones: Aceptar y Cancelar.
+		1.2. El Jefe de la Unidad de RRHH ingresa los datos de la Prueba de Conocimiento.
+		1.3. El Jefe de la Unidad de RRHH selecciona la opcion Aceptar.
+		1.4. El sistema  valida los datos ingresados.
+		1.5. El sistema genera un nuevo codigo de Prueba de Conocimiento y muestra el
+		     el mensaje "Convocatoria creada con codigo Nro. COxxxxx".
+		1.6. El Jefe de la Unidad de RRHH cierra la interfaz PRUEBA DE CONOCIMIENTOS y 
+		     regresa a la interfaz CONVOCATORIA con el combobox de la lista de 
+		     pruebas de conocimiento actualizada y el subflujo finaliza.
+
+
+Flujos Alternativos:
+	1. Datos de la Convocatoria Invalidos
+	 Si los datos ingresados son nulos o invalidos, tanto en el subflujo Agregar como 
+	 en Actualizar Convocatoria, el sistema muestra el mensaje: "Se han encontrado 
+	 datos invalidos" y los subflujos continuan en el paso 2.
+	
+	
+
+PreCondiciones:
+	1. El Jefe de la Unidad de RRHH esta logueado en el sistema.
+	2. Lista disponible de Convocatorias
+
+PostCondiciones:
+	1. En el sistema quedara registrado la nueva Convocatoria
+	2. En el sistema quedara actualizado el registro de la Convocatoria.
+	3. En el sistema quedara desactivada la Convocatoria.

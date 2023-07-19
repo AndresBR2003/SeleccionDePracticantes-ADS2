@@ -1,0 +1,50 @@
+Especificación del caso de uso Calificar CV
+
+1.-Descripción:
+	El caso de uso permitira filtrar los Cv correctos de los postulantes que se  postulan para 
+	cierta convocatoria elegida por ellos y creada para los postulantes que cumplan con los conocimientos 
+	y requisitos que solicita, el profesional encargado del proceso de selección de personal de la unidad de RRHH, 
+	es encargado de solicitar, filtrar y subir los cv correctos de los postulantes.
+
+2.-Actor(es)
+ El profesional encargado del proceso de selección de personal de la unidad de RRHH
+
+3.-Flujo de Eventos
+	3.1.- Flujo Básico
+		3.1.1. El caso de uso inicia cuando El profesional encargado del proceso de selección de personal de la unidad de RRHH selecciona la opcion CV´s en la interfaz del menu principal.
+		3.1.2. El sistema muestra la interfaz "CV's" con el listado, por convocatoria, de todos los CV´s.Ademas de los botones Calificar Cv´s y Regresar
+		3.1.3. El profesional encargado del proceso de selección de personal de la unidad de RRHH, selecciona una Convocatoria
+	        a.Si elige Calificar Cv´s ver sublujo Calificar Cv´s
+
+
+3.2.-SUBFLUJO
+	3.2.1.- Calificar Cv´s
+		3.2.1.1. El sistema muestra la interfaz "CV´s", con 2 listados: el listado de todos los CV´s de la convocatoria elegida sin revisar y a la izquierda los revisados.
+			 Ademas muestra las opciones descargar CV, Aprobar CV, Desaprobar CV, Publicar Resultados, Descalificar CV y Regresar.
+		3.2.1.2. El profesional encargado del proceso de selección de personal de la unidad de RRHH elige la opcion decargar CV.
+		3.2.1.3. El profesional encargado del proceso de selección de personal de la unidad de RRHH revisa y califica el CV.
+		3.2.1.4. El profesional encargado del proceso de selección de RRHH, preciona "Aprobar CV".
+		3.2.1.5.-El profesional encargado del proceso de selección de personal de la unidad de RRHH realizará la acción 3.2.1.2. y 3.2.1.3. hasta acabar con todos los CV´s
+		3.2.1.6.-El profesional encargado del proceso de selección de personal de la unidad de RRHH precionará la opcion Publicar Resultados y termina el caso de uso.
+
+			
+3.3 Flujo Alternativos
+	3.3.1. Si El profesional encargado del proceso de selección de personal de la unidad de RRHH, selecciona regresar, en el punto 3.1.2, el caso de uso finaliza. 
+	3.3.2. Si El profesional encargado del proceso de selección de personal de la unidad de RRHH, en el punto 3.2.1.4, el CV revisado obtuvo nota descalifico, retorna al paso 3.2.1.3. hasta obtener el paso 3.3.3.
+	3.3.3. Si El profesional encargado del proceso de selección de personal de la unidad de RRHH, en el punto 3.2.1.4, el CV revisado obtuvo nota califico, retorna al paso 3.2.1.3. hasta obtener la totalidad de cv's calificadas y continuar el proceso.
+	3.3.4. Si El profesional encargado del proceso de selección de personal de la unidad de RRHH, se equivoca en calificar un CV, preciona "Descalificar CV".
+		3.3.3.1. El CV descalificado volverá a la lista numero 3.3.1 se vuelve reanuda el proceso en el punto 3.2.1.3.
+	3.3.4. Si El profesional encargado del proceso de selección de personal de la unidad de RRHH, preciona en Salir finaliza el caso de uso.
+4.-Precondiciones
+	4.1.-El profesional encargado del proceso de selección de personal de la unidad de RRHH está identificado en el sistema
+	4.2.-Lista disponible de CV´s
+	
+5.-Poscondiciones
+	5.1.-En el sistema Quedará Guardado el Calificado
+	5.2.-En el sistema Quedará Guardado el Descalificado
+	
+6.-Puntos de Extensión
+	Nunguna
+7.-Requisitors Especiales
+	Ninguno
+

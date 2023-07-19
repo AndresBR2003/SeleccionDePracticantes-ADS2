@@ -1,0 +1,81 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<RhapsodyArchive>
+	<MagicNumber></MagicNumber>
+	<CODE-PAGE>1252</CODE-PAGE>
+	<version>109.0.1</version>
+	<lang>C++</lang>
+	<BuildNo>202006101734</BuildNo>
+	<RMMMinimumClientVersion>100.0</RMMMinimumClientVersion>
+	
+	<RHAPSODY-MODEL>
+	<ISubsystem type="e">
+			<_id type="a">GUID 2b34979e-15c1-443f-af73-dd0fd102346f</_id>
+			<_myState type="a">8192</_myState>
+			<_name type="a">Seguridad</_name>
+			<_modifiedTimeWeak type="a">2.1.2022::5:24:38</_modifiedTimeWeak>
+			<_theMainDiagram type="r">
+				<IHandle type="e">
+					<_hm2Class type="a">IDiagram</_hm2Class>
+					<_hfilename type="a">.\MA.sbsx</_hfilename>
+					<_hsubsystem type="a">MA</_hsubsystem>
+					<_hname type="a">Arquitectura de analisis</_hname>
+					<_hid type="a">GUID f842c0a1-25c8-4baa-8589-1d15efe8a5cf</_hid>
+				</IHandle>
+			</_theMainDiagram>
+			<_modifiedTime type="a">2.1.2022::5:24:38</_modifiedTime>
+			<_lastID type="a">1</_lastID>
+			<weakCGTime type="a">2.1.2022::5:24:38</weakCGTime>
+			<strongCGTime type="a">2.1.2022::5:24:38</strongCGTime>
+			<_defaultComposite type="s">GUID 9caedd57-190e-4f4e-826f-5721951d3b6f</_defaultComposite>
+			<_eventsBaseID type="a">-1</_eventsBaseID>
+			<_configurationRelatedTime type="a">1.2.1990::0:0:0</_configurationRelatedTime>
+			<AggregatesList type="e">
+				<value>GUID 78f92b04-52b4-427b-aabe-7c90aaf816d9</value>
+				<value>GUID 9caedd57-190e-4f4e-826f-5721951d3b6f</value>
+			</AggregatesList>
+		</ISubsystem>
+		<IDependency type="e">
+			<_id type="a">GUID 78f92b04-52b4-427b-aabe-7c90aaf816d9</_id>
+			<_myState type="a">2048</_myState>
+			<_name type="a">Reutilizables</_name>
+			<_modifiedTimeWeak type="a">2.1.2022::5:24:38</_modifiedTimeWeak>
+			<_modifiedTime type="a">2.1.2022::5:24:38</_modifiedTime>
+			<_dependsOn type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hfilename type="a">.\Reutilizables.sbsx</_hfilename>
+					<_hname type="a">Reutilizables</_hname>
+					<_hid type="a">GUID a3a84d7f-e171-4983-aaa6-f14d9e258e47</_hid>
+				</INObjectHandle>
+			</_dependsOn>
+			<_dependent type="r">
+				<INObjectHandle type="e">
+					<_hm2Class type="a">ISubsystem</_hm2Class>
+					<_hid type="a">GUID 2b34979e-15c1-443f-af73-dd0fd102346f</_hid>
+				</INObjectHandle>
+			</_dependent>
+		</IDependency>
+		<IClass type="e">
+			<_id type="a">GUID 9caedd57-190e-4f4e-826f-5721951d3b6f</_id>
+			<_myState type="a">40960</_myState>
+			<_name type="a">TopLevel</_name>
+			<_modifiedTimeWeak type="a">1.2.1990::0:0:0</_modifiedTimeWeak>
+			<_modifiedTime type="a">1.2.1990::0:0:0</_modifiedTime>
+			<weakCGTime type="a">1.2.1990::0:0:0</weakCGTime>
+			<strongCGTime type="a">1.2.1990::0:0:0</strongCGTime>
+			<_itsStateChart type="r">
+				<IHandle type="e">
+				</IHandle>
+			</_itsStateChart>
+			<_classModifier type="a">Unspecified</_classModifier>
+		</IClass>
+		
+	</RHAPSODY-MODEL>
+	<OslcLinks type="c">
+		<IRPYRawContainer type="e">
+		</IRPYRawContainer>
+	</OslcLinks>
+
+<INCLUDES-RHAPSODY-INDEX>false</INCLUDES-RHAPSODY-INDEX>
+</RhapsodyArchive>
+

@@ -1,0 +1,51 @@
+Especificacion del caso de uso Calificar prueba de conocimientos
+
+1.-Descripcion:
+  El caso de uso permitira revisar y las pruebas de conocimiento 
+  realizadas en una convocatoria, calificarlas y publicar los resultados en la intranet
+
+2.-Actor(es):
+  El profesional encargado del proceso de selección de personal de la unidad de RRHH
+
+3.-Flujo de Eventos:
+3.1.-Flujo Basico
+	3.1.1. El caso de uso inicia cuando El profesional encargado del proceso de selección de personal de la unidad de RRHH, selecciona la opcion Pruebas de conocimiento en la interfaz del menu principal.
+
+	3.1.2. El sistema muestra la interfas "Pruebas de Conocimiento" con el listado, por convocatoria, de todas las pruebas. Ademas de los botones Calificar Pruebas y Regresar.
+	
+	3.1.3. El profesional encargado del proceso de selección de personal de la unidad de RRHH selecciona una Convocatoria.
+	a.Si elige Calificar Pruebas ver subflujo Calificar Pruebas.
+	
+	
+3.2.-SubFlujos
+	3.2.1. Calificar Pruebas
+		3.2.1.1. El sistema muestra la interfaz "Pruebas", con 2 listados: listado de todas las pruebas de la convocatoria elegida sin revisar y a su derecha las revisadas. 
+			 Ademas muestra las opciones Calificar, Descalificar, Publicar y Regresar.
+		3.2.1.2. El profesional encargado del proceso de selección de personal de la unidad de RRHH, selecciona una prueba del listado de las pruebas sin calificar.
+		3.2.1.3. El profesional encargado del proceso de selección de personal de la unidad de RRHH, preciona en Calificar.
+		3.2.1.4. El sistema muestra la interfaz "Calificar Prueba" con las preguntas de la prueba y las respuestas dadas por el postulante y los datos del postulante. 
+			 Ademas de un txtbox para insetar la nota y los botones Guardar y Regresar.
+		3.2.1.5. El profesional encargado del proceso de selección de personal de la unidad de RRHH, revia y califica la prueba.
+		3.2.1.6. El profesional encargado del proceso de selección de personal de la unidad de RRHH, preciona el boton Guardar.   
+		3.2.1.7. El sistema regresa a la interfaz "Pruebas" con los 2 listados actualizados.
+		3.2.1.8. El profesional encargado del proceso de selección de personal de la unidad de RRHH, realiza desde la acción 3.2.1.2. hasta la 3.2.1.6. hasta que no queden pruebas en el primer listado.
+		3.2.1.9. El profesional encargado del proceso de selección de personal de la unidad de RRHH, preciona el boton Publicar y termina el caso de uso.
+
+3.3.-Flujo Alternativos
+	3.3.1. Si El profesional encargado del proceso de selección de personal de la unidad de RRHH selecciona regresar, en el punto 3.1.2, el caso de uso finaliza. 
+	3.3.2. Si El profesional encargado del proceso de selección de personal de la unidad de RRHH se equivoca en calificar una prueba, preciona "Descalificar" en la interfaz "Pruebas", previa seleccion de la prueba.
+		3.3.2.1 La prueba descalificada volvera al listado numero 3.3.1. y el caso de uso se reanuda en el punto 3.2.1.2
+
+4.-Precondiciones:
+	4.1. El profesional encargado del proceso de selección de personal de la unidad de RRHH está identificado en el sistema
+	4.2. Lista disponible de Pruebas.
+
+5.-Postcondiciones:
+	5.1. En el sistema quedará guardado las pruebas calificadas
+	5.2. En el sistema quedará guardado las pruebas descalificadas
+
+6.-Puntos de Extension:
+	Ninguno
+
+7.-Requisitos especiales:
+	Ninguno
